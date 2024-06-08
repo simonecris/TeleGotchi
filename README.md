@@ -38,9 +38,10 @@ sudo make && sudo make install
 ```
 2. Copy telegram.py file inside the custom plugins folder.
 
-Default path is:
+Default way is:
 ```
-/usr/local/share/pwnagotchi/custom-plugins
+cd /usr/local/share/pwnagotchi/custom-plugins #default path for custom plugins
+wget https://raw.githubusercontent.com/simonecris/TeleGotchi/main/telegram.py
 ```
 
 3. Edit the `/etc/pwnagotchi/config.toml` file with the following:
