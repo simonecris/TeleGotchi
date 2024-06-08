@@ -28,20 +28,20 @@ and much more!
 SSH to your pwnagotchi and run the following commands:
 ```
 sudo pip3 uninstall telegram python-telegram-bot
-sudo pip3 install python-telegram-bot=13.15
+sudo pip3 install python-telegram-bot==13.15
 
 # hcxtools (required for hashcat and wordlist generation)
-apt install -y python3-requests build-essential pkg-config libcurl4-openssl-dev libssl-dev zlib1g-dev make gcc
+sudo apt install -y python3-requests build-essential pkg-config libcurl4-openssl-dev libssl-dev zlib1g-dev make gcc
 wget https://github.com/ZerBea/hcxtools/archive/refs/tags/6.2.7.tar.gz
 tar xzvf 6.2.7.tar.gz && cd hcxtools-6.2.7
-make
-make install
+sudo make && sudo make install
 ```
 2. Copy telegram.py file inside the custom plugins folder.
 
-Default path is:
+Default way is:
 ```
-/usr/local/share/pwnagotchi/custom-plugins
+cd /usr/local/share/pwnagotchi/custom-plugins #default path for custom plugins
+sudo wget https://raw.githubusercontent.com/simonecris/TeleGotchi/main/telegram.py
 ```
 
 3. Edit the `/etc/pwnagotchi/config.toml` file with the following:
