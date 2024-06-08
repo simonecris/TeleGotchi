@@ -41,7 +41,7 @@ sudo make && sudo make install
 Default way is:
 ```
 cd /usr/local/share/pwnagotchi/custom-plugins #default path for custom plugins
-wget https://raw.githubusercontent.com/simonecris/TeleGotchi/main/telegram.py
+sudo wget https://raw.githubusercontent.com/simonecris/TeleGotchi/main/telegram.py
 ```
 
 3. Edit the `/etc/pwnagotchi/config.toml` file with the following:
