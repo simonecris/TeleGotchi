@@ -28,7 +28,7 @@ and much more!
 SSH to your pwnagotchi and run the following commands:
 ```
 sudo pip3 uninstall telegram python-telegram-bot
-sudo pip3 install python-telegram-bot=13.15
+sudo pip3 install python-telegram-bot==13.15
 
 # hcxtools (required for hashcat and wordlist generation)
 apt install -y python3-requests build-essential pkg-config libcurl4-openssl-dev libssl-dev zlib1g-dev make gcc
